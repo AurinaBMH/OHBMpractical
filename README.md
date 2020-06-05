@@ -9,7 +9,7 @@ The script `visualise_geneExpression.m` will plot a set of histograms visualisin
 To run functions separately:
 
 ```matlab
-    % Add paths required for the project:
+    % add paths required for the project:
     setupPaths()
     % load data
     load('geneExpression.mat')
