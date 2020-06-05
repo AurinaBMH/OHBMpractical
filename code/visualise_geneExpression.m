@@ -1,10 +1,11 @@
 clear all; close all;
-% Load the data
-load('geneExpression.mat')
 
-% choose genes to visualise - select from probe.Information.GeneSymbol
-selectGenes = {'ABCA2', 'CAPN2', 'CTDSPL', 'ZYG11B'}; 
+% choose genes to visualise
+selectGenes = {'ABCA2', 'CAPN2', 'CTDSPL'}; 
 makeNewFigure = true; 
+
+% load data
+load('geneExpression.mat')
 
 % plot the distributions of gene expression for selected genes
 f1 = plot_distributions(selectGenes, probeInformation, parcelExpression,makeNewFigure);
