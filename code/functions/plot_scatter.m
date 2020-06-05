@@ -35,7 +35,8 @@ for g1=1:numGenes
         indG2 = strcmp(probeInformation.GeneSymbol, selectGenes{g2});
         % select a subplot
         subplot(1,numPairs,k);
-        scatter(parcelExpression(:,indG1), parcelExpression(:,indG2), 100, 'MarkerEdgeColor',[239,138,98]/255 ,'MarkerFaceColor',[1 1 1], 'LineWidth',3);
+        scatter(parcelExpression(:,indG1), parcelExpression(:,indG2),100, 'MarkerEdgeColor',[33,102,172]/255 ,'MarkerFaceColor',[1 1 1], 'LineWidth',3);
+        set(gcf, 'renderer', 'painters')
         r = corr(parcelExpression(:,indG1), parcelExpression(:,indG2), 'rows', 'complete'); 
         % plot best fit line
         h2 = lsline;
