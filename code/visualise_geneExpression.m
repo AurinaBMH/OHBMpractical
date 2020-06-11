@@ -1,5 +1,6 @@
 clear all; close all;
-
+% add paths
+setupPaths()
 % ------------------------------------------
 % choose genes to visualise
 selectGenes = {'ABCA2', 'CAPN2', 'CTDSPL'}; 
@@ -7,7 +8,7 @@ makeNewFigure = true;
 % ------------------------------------------
 
 % load data
-load('geneExpression.mat')
+load('data/geneExpression.mat')
 
 % ------------------------------------------
 % plot the distributions of gene expression for selected genes

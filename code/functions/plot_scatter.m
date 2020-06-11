@@ -37,19 +37,19 @@ for g1=1:numGenes
         subplot(1,numPairs,k);
         scatter(parcelExpression(:,indG1), parcelExpression(:,indG2),100, 'MarkerEdgeColor',[33,102,172]/255 ,'MarkerFaceColor',[1 1 1], 'LineWidth',3);
         set(gcf, 'renderer', 'painters')
-        %r = corr(parcelExpression(:,indG1), parcelExpression(:,indG2), 'rows', 'complete'); 
+        r = corr(parcelExpression(:,indG1), parcelExpression(:,indG2), 'rows', 'complete'); 
         % plot best fit line
-        %h2 = lsline;
-        %h2.LineWidth = 4;
-        %h2.LineStyle = ':';
-        %h2.Color = [0.2, 0.2, 0.2];
-        %lsline_octave(parcelExpression(:,indG1), parcelExpression(:,indG2), h1);
+        h2 = lsline;
+        h2.LineWidth = 4;
+        h2.LineStyle = ':';
+        h2.Color = [0.2, 0.2, 0.2];
+       
         % give labels
         xlabel(sprintf('%s\n', selectGenes{g1}))
         ylabel(sprintf('%s\n', selectGenes{g2}))
         
         % write correlation as title
-        %title(sprintf('r=%s', num2str(round(r,2))))
+        title(sprintf('r=%s', num2str(round(r,2))))
         
         xlim([min(expALL(:)) max(expALL(:))])
         ylim([min(expALL(:)) max(expALL(:))])
