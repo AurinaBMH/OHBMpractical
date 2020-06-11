@@ -29,7 +29,7 @@ for g=1:numGenes
     indG = strcmp(probeInformation.GeneSymbol, selectGenes{g});
     % select a subplot
     AxHandle(g) = subplot(1,numGenes,g); 
-    histogram(parcelExpression(:,indG), 20, 'EdgeColor', [33,102,172]/255, 'FaceColor',[1 1 1], ...
+    hist(parcelExpression(:,indG), 20, 'EdgeColor', [33,102,172]/255, 'FaceColor',[1 1 1], ...
         'LineWidth',3)
 
     axis square
