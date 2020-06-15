@@ -2,6 +2,7 @@ function f = plot_distributions(selectGenes, probeInformation, parcelExpression,
 % plot_distributions    plots histograms visualising regional gene expression for selected genes 
 %
 %---INPUTS:
+% selectGenes, cell containing gene names
 % probeInformation, structure containing information about genes (columns
 % in parcelExpression variable)
 % parcelExpression, matrix containing regional gene expression measures

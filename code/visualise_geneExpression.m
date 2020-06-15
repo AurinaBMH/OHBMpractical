@@ -18,7 +18,7 @@ print(f1,figureName,'-dpng','-r600');
 
 
 % ------------------------------------------
-% calculate pairwise correlationa and plot the scatter-plots for selected genes
+% calculate pairwise correlations and plot the scatter-plots for selected genes
 f2 = plot_scatter(selectGenes, probeInformation, parcelExpression,makeNewFigure);
 % save the figure
 figureName = sprintf('figures/scatterGenes.png');

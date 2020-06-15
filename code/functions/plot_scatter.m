@@ -3,7 +3,7 @@ function f = plot_scatter(selectGenes, probeInformation, parcelExpression,makeNe
 % plot_scatter    plots scatter plots for each pair of selected genes
 %
 %---INPUTS:
-% selectGenes, cell of gene names
+% selectGenes, cell containing gene names
 % probeInformation, structure containing information about genes (columns
 % in parcelExpression variable)
 % parcelExpression, matrix containing regional gene expression measures
