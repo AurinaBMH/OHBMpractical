@@ -1,6 +1,4 @@
 clear all; close all;
-% add paths
-setupPaths()
 % ------------------------------------------
 % choose genes to visualise
 selectGenes = {'ABCA2', 'CAPN2', 'CTDSPL'}; 
