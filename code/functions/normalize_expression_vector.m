@@ -14,6 +14,7 @@ function norm_expression = normalize_expression_vector(selectGenes, probeInforma
 % select all genes at once
 [~,indG] = intersect(probeInformation.GeneSymbol, selectGenes);
 expVals = parcelExpression(:, indG); 
+
 % do the operations in a vectorised form
 norm_expression = (expVals - nanmean(expVals))./nanstd(expVals); 
 
