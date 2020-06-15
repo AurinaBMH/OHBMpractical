@@ -2,9 +2,9 @@
 
 This repository provides Matlab code for OHBM hackathon practical session.
 ### Data files
-Please download file `geneExpression.mat` from [cloudstor](https://cloudstor.aarnet.edu.au/plus/s/pGRbhqC5zTUPWzY) and place in the `data` folder in the root directory. 
+Please download file `geneExpression.mat` from [cloudstor](https://cloudstor.aarnet.edu.au/plus/s/pGRbhqC5zTUPWzY), create `data` folder in the root directory and place the `geneExpression.mat` file there.
 ### Code
-The script `visualise_geneExpression.m` will plot a set of histograms visualising regional gene expression for selected genes and pairwise correlations between them. 
+First, setup by adding required paths by running `setupPaths()` function. Then, the script `visualise_geneExpression.m` will plot a set of histograms visualising regional gene expression for selected genes and pairwise correlations between them. 
 
 To run functions separately:
 
