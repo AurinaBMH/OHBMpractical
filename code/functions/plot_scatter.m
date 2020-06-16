@@ -1,4 +1,4 @@
-function f = plot_scatter(selectGenes, probeInformation, parcelExpression,makeNewFigure)
+function f = plot_scatter(selectGenes, probeInformation, parcelExpression,makeFigure)
 
 % plot_scatter    plots scatter plots for each pair of selected genes
 %
@@ -14,7 +14,7 @@ function f = plot_scatter(selectGenes, probeInformation, parcelExpression,makeNe
 % figure visualising distributions
 
 % make a new figure, if selected
-if makeNewFigure
+if makeFigure
 f = figure('color','w');
 set(gcf, 'Position', [200 500 1800 500])
 end

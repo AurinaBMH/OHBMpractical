@@ -1,4 +1,4 @@
-function f = plot_distributions(selectGenes, probeInformation, parcelExpression, doPlot)
+function f = plot_distributions(selectGenes, probeInformation, parcelExpression, makeFigure)
 % plot_distributions    plots histograms visualising regional gene expression for selected genes 
 %
 %---INPUTS:
@@ -12,7 +12,7 @@ function f = plot_distributions(selectGenes, probeInformation, parcelExpression,
 % figure visualising distributions
 
 % make a new figure, if selected
-if doPlot
+if makeFigure
 f = figure('color','w');
 set(gcf, 'Position', [200 500 1500 500])
 end
