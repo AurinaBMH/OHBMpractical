@@ -62,8 +62,4 @@ for g1=1:numGenes
     end
 end
 
-% apply same axes to all subplots for consistency
-
-
-
 end
