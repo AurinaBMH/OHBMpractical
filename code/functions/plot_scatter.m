@@ -1,5 +1,4 @@
 function f = plot_scatter(selectGenes, probeInformation, parcelExpression,makeFigure)
-
 % plot_scatter    plots scatter plots for each pair of selected genes
 %
 %---INPUTS:
